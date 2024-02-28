@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Intro_MAUI.Pages.Suma"
+             Title="Suma">
+    <VerticalStackLayout Padding="50" Spacing="5">
+        <Label Text="Ingrese primer número:" />
+        <Entry x:Name="txtN1" Keyboard="Numeric" />
+        <Label Text="Ingrese segundo número:" />
+        <Entry x:Name="txtN2" Keyboard="Numeric" />
+        <Label Text="Resultado:" />
+        <Entry x:Name="txtResultado" IsReadOnly="True" />
+        <Button x:Name="btnSumar" Text="Sumar" Clicked="btnSumar_Clicked" BackgroundColor="Green" />
+        <Button x:Name="btnLimpiar" Text="Limpiar" Clicked="btnLimpiar_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
